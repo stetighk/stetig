@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>STETIG LIMITED | Advanced Orthopedic & Medical Solutions</title>
+
+<meta name="description"
+content="Stetig Limited connects global medical innovation with Southeast Asia, with a focus on orthopedic implants, regenerative medicine and advanced medical technologies.">
+
+<style>
+
+:root {
+    --navy: #082b55;
+    --navy-dark: #051e3b;
+    --blue: #0a5da8;
+    --blue-light: #eaf4fb;
+    --text: #17283d;
+    --muted: #657487;
+    --border: #dfe7ef;
+    --white: #ffffff;
+    --light: #f5f8fb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+    color: var(--text);
+    background: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1180px, 90%);
+    margin: auto;
+}
+
+/* =========================================
+   TOP BAR
+========================================= */
+
+.topbar {
+    background: var(--navy);
+    color: white;
+    font-size: 12px;
+    padding: 9px 0;
+}
+
+.topbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.topbar-right {
+    white-space: nowrap;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background: rgba(255,255,255,0.97);
+    border-bottom: 1px solid #edf1f5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Concept logo */
+
+.logo {
+    color: var(--navy);
+    font-weight: 800;
+    font-size: 27px;
+    letter-spacing: 5px;
+    line-height: 1;
+}
+
+.logo small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 7px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: #26384c;
+    transition: .25s;
+}
+
+.nav-links a:hover {
+    color: var(--blue);
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 27px;
+    cursor: pointer;
+    color: var(--navy);
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(242,248,252,.98) 0%,
+            rgba(242,248,252,.92) 45%,
+            rgba(242,248,252,.25) 100%
+        ),
+        linear-gradient(
+            120deg,
+            #e9f2f8,
+            #ffffff
+        );
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    right: -220px;
+    top: -120px;
+    background:
+        radial-gradient(
+            circle,
+            rgba(10,93,168,.18),
+            rgba(10,93,168,0)
+        );
+}
+
+.hero-content {
+    max-width: 720px;
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow {
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.03;
+    color: var(--navy);
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 650px;
+    color: #53667b;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--navy);
+    color: white;
+    padding: 15px 25px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: .25s;
+}
+
+.btn:hover {
+    background: var(--blue);
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   SECTION
+========================================= */
+
+section {
+    padding: 95px 0;
+}
+
+.section-title {
+    max-width: 700px;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    color: var(--navy);
+    font-size: 38px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+
+.section-title p {
+    color: var(--muted);
+    font-size: 16px;
+}
+
+/* =========================================
+   EXPERTISE
+========================================= */
+
+.expertise {
+    background: white;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.expertise-card {
+    border: 1px solid var(--border);
+    padding: 35px 28px;
+    background: white;
+    transition: .3s;
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(8,43,85,.08);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--blue-light);
+    color: var(--blue);
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.expertise-card h3 {
+    color: var(--navy);
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.expertise-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+    background: var(--light);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-image {
+    min-height: 500px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(8,43,85,.88),
+            rgba(10,93,168,.45)
+        ),
+        linear-gradient(
+            120deg,
+            #193e64,
+            #9eb8ce
+        );
+    position: relative;
+    overflow: hidden;
+}
+
+.about-image::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 50%;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-image::after {
+    content: "STETIG";
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: rgba(255,255,255,.85);
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 8px;
+}
+
+.about-content h2 {
+    color: var(--navy);
+    font-size: 40px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+/* =========================================
+   PRODUCTS
+========================================= */
+
+.products {
+    background: white;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+}
+
+.product-card {
+    padding: 28px;
+    min-height: 180px;
+    border: 1px solid var(--border);
+    position: relative;
+    transition: .3s;
+}
+
+.product-card:hover {
+    border-color: var(--blue);
+    transform: translateY(-3px);
+}
+
+.product-number {
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.product-card h3 {
+    color: var(--navy);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* =========================================
+   MARKET DEVELOPMENT
+========================================= */
+
+.market {
+    background: var(--navy);
+    color: white;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.market .eyebrow {
+    color: #65b8f3;
+}
+
+.market h2 {
+    font-size: 40px;
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.market p {
+    color: #cbd9e8;
+    font-size: 16px;
+}
+
+.approach {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+}
+
+.approach-item {
+    border: 1px solid rgba(255,255,255,.15);
+    padding: 22px;
+}
+
+.approach-item strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.approach-item span {
+    color: #aebfd1;
+    font-size: 12px;
+}
+
+/* =========================================
+   PARTNERS
+========================================= */
+
+.partners {
+    background: var(--light);
+}
+
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 14px;
+}
+
+.partner {
+    min-height: 110px;
+    background: white;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #48647e;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   RESOURCES
+========================================= */
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+}
+
+.news-card {
+    border: 1px solid var(--border);
+    padding: 30px;
+}
+
+.news-category {
+    color: var(--blue);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.news-card h3 {
+    color: var(--navy);
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.news-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.cta {
+    background:
+        linear-gradient(
+            120deg,
+            #edf6fc,
+            #f8fbfd
+        );
+    text-align: center;
+}
+
+.cta h2 {
+    color: var(--navy);
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: var(--navy-dark);
+    color: white;
+    padding: 70px 0 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.4fr;
+    gap: 50px;
+}
+
+.footer-logo {
+    color: white;
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+
+.footer-logo small {
+    display: block;
+    font-size: 8px;
+    letter-spacing: 5px;
+    margin-top: 6px;
+}
+
+.footer-description {
+    color: #aebfd1;
+    font-size: 13px;
+    max-width: 330px;
+    margin-top: 25px;
+}
+
+footer h4 {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer li a {
+    color: #aebfd1;
+    font-size: 13px;
+}
+
+footer li a:hover {
+    color: white;
+}
+
+.contact-info {
+    color: #aebfd1;
+    font-size: 13px;
+}
+
+.contact-info strong {
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255,255,255,.12);
+    color: #8195aa;
+    font-size: 11px;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width: 950px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .topbar-inner {
+        justify-content: center;
+    }
+
+    .topbar-right {
+        display: none;
+    }
+
+    .expertise-grid,
+    .products-grid,
+    .news-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .partner-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .about-grid,
+    .market-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 600px) {
+
+    section {
+        padding: 70px 0;
+    }
+
+    .navbar {
+        height: 72px;
+    }
+
+    .hero {
+        min-height: 580px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .expertise-grid,
+    .products-grid,
+    .news-grid,
+    .partner-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        min-height: 330px;
+    }
+
+    .about-content h2,
+    .section-title h2,
+    .market h2,
+    .cta h2 {
+        font-size: 31px;
+    }
+
+    .approach {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar {
+        display: none;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================================
+     TOP BAR
+========================================= -->
+
+<div class="topbar">
+
+<div class="container topbar-inner">
+
+<div>
+Suite 1701-02, 17/F., 308 Central Des Voeux,
+308 Des Voeux Road Central, Hong Kong
+</div>
+
+<div class="topbar-right">
++852 9351 0184 &nbsp; | &nbsp; stetighk@gmail.com
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#home">
+
+<div class="logo">
+STETIG
+<small>LIMITED</small>
+</div>
+
+</a>
+
+<nav class="nav-links">
+
+<a href="#home">HOME</a>
+<a href="#about">ABOUT US</a>
+<a href="#products">PRODUCTS</a>
+<a href="#solutions">SOLUTIONS</a>
+<a href="#partners">PARTNERS</a>
+<a href="#resources">RESOURCES</a>
+<a href="#contact">CONTACT US</a>
+
+</nav>
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+</div>
+
+</header>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="eyebrow">
+Medical Technology • Orthopedics
+</div>
+
+<h1>
+Advanced Orthopedic
+& Medical Solutions
+</h1>
+
+<p>
+Connecting global medical innovation with Southeast Asia.
+We support leading medical technology manufacturers in developing
+sustainable opportunities across the region.
+</p>
+
+<a href="#about" class="btn">
+DISCOVER STETIG
+<span>→</span>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     EXPERTISE
+========================================= -->
+
+<section class="expertise">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+Our Expertise
+</div>
+
+<h2>
+Focused on Technologies That Improve Mobility and Quality of Life
+</h2>
+
+<p>
+Our experience is built around medical technologies with a particular
+focus on orthopedic implants, regenerative solutions and advanced
+medical devices.
+</p>
+
+</div>
+
+
+<div class="expertise-grid">
+
+
+<div class="expertise-card">
+
+<div class="icon">01</div>
+
+<h3>
+Orthopedic Implants
+</h3>
+
+<p>
+Advanced implantable technologies for joint reconstruction,
+spine surgery, sports medicine and other orthopedic applications.
+</p>
+
+</div>
+
+
+<div class="expertise-card">
+
+<div class="icon">02</div>
+
+<h3>
+Regenerative & Biomaterial Solutions
+</h3>
+
+<p>
+Innovative technologies supporting tissue repair, regeneration
+and orthopedic applications.
+</p>
+
+</div>
+
+
+<div class="expertise-card">
+
+<div class="icon">03</div>
+
+<h3>
+Medical Technologies
+</h3>
+
+<p>
+Selected high-quality medical solutions addressing evolving
+clinical needs across Southeast Asian healthcare markets.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section class="about" id="about">
+
+<div class="container about-grid">
+
+<div class="about-image">
+</div>
+
+
+<div class="about-content">
+
+<div class="eyebrow">
+Who We Are
+</div>
+
+<h2>
+Connecting Global Medical Innovation with Southeast Asia
+</h2>
+
+<p>
+Stetig Limited is a medical solutions company with in-depth
+knowledge and experience in the medical device market, with
+a particular focus on orthopedic implants and advanced
+regenerative and biomaterial solutions.
+</p>
+
+<p>
+We understand the specific requirements of healthcare markets
+across Southeast Asia and work closely with leading medical
+device manufacturers around the world to support the development
+and expansion of their products and technologies in the region.
+</p>
+
+<p>
+Our expertise extends beyond product introduction. We combine
+market knowledge, clinical understanding and local market
+experience to help our international partners navigate the
+opportunities and challenges of Southeast Asian healthcare markets.
+</p>
+
+<a href="#solutions" class="btn">
+OUR APPROACH →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     PRODUCTS
+========================================= -->
+
+<section class="products" id="products">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+Products
+</div>
+
+<h2>
+Advanced Technologies for Orthopedic & Healthcare Applications
+</h2>
+
+<p>
+Stetig works with international medical technology partners to
+support the introduction and development of selected products
+across Southeast Asian markets.
+</p>
+
+</div>
+
+
+<div class="products-grid">
+
+
+<div class="product-card">
+
+<div class="product-number">01</div>
+
+<h3>Joint Replacement</h3>
+
+<p>
+Implant technologies supporting reconstruction of the hip,
+knee and other major joints.
+</p>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-number">02</div>
+
+<h3>Spine Surgery</h3>
+
+<p>
+Technologies and implant systems supporting modern spinal
+procedures and reconstruction.
+</p>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-number">03</div>
+
+<h3>Sports Medicine & Arthroscopy</h3>
+
+<p>
+Solutions for minimally invasive orthopedic and sports
+medicine procedures.
+</p>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-number">04</div>
+
+<h3>Shoulder Solutions</h3>
+
+<p>
+Implant and surgical technologies for shoulder reconstruction
+and related orthopedic applications.
+</p>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-number">05</div>
+
+<h3>Regenerative Medicine</h3>
+
+<p>
+Advanced biomaterial and regenerative solutions for orthopedic
+and tissue-repair applications.
+</p>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-number">06</div>
+
+<h3>Joint Injection</h3>
+
+<p>
+Selected injection technologies supporting joint care and
+orthopedic applications.
+</p>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-number">07</div>
+
+<h3>Surgical Instruments</h3>
+
+<p>
+Selected instruments and accessories supporting orthopedic
+surgical procedures.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     SOLUTIONS
+========================================= -->
+
+<section class="market" id="solutions">
+
+<div class="container market-grid">
+
+
+<div>
+
+<div class="eyebrow">
+Market Development
+</div>
+
+<h2>
+From Global Innovation to Local Healthcare Markets
+</h2>
+
+<p>
+Stetig serves as a strategic market development partner for
+international medical device manufacturers seeking to establish
+and expand their presence in Southeast Asia.
+</p>
+
+<br>
+
+<p>
+We combine global medical technology with local market knowledge,
+supporting our partners throughout the market development process
+and helping innovative solutions reach healthcare professionals
+and patients.
+</p>
+
+</div>
+
+
+<div class="approach">
+
+<div class="approach-item">
+<strong>Understand</strong>
+<span>Market knowledge and healthcare environment.</span>
+</div>
+
+<div class="approach-item">
+<strong>Identify</strong>
+<span>Relevant opportunities and market needs.</span>
+</div>
+
+<div class="approach-item">
+<strong>Develop</strong>
+<span>Market entry and sustainable development.</span>
+</div>
+
+<div class="approach-item">
+<strong>Connect</strong>
+<span>Healthcare professionals and local stakeholders.</span>
+</div>
+
+<div class="approach-item">
+<strong>Grow</strong>
+<span>Long-term regional development.</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     PARTNERS
+========================================= -->
+
+<section class="partners" id="partners">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+Global Partners
+</div>
+
+<h2>
+Building Long-Term International Partnerships
+</h2>
+
+<p>
+We collaborate with established medical technology manufacturers
+and partners to support responsible market development across
+Southeast Asia.
+</p>
+
+</div>
+
+
+<div class="partner-grid">
+
+<div class="partner">
+MEDICAL<br>TECHNOLOGY
+</div>
+
+<div class="partner">
+ORTHOPEDIC<br>INNOVATION
+</div>
+
+<div class="partner">
+BIOMATERIAL<br>SOLUTIONS
+</div>
+
+<div class="partner">
+REGENERATIVE<br>TECHNOLOGY
+</div>
+
+<div class="partner">
+SURGICAL<br>SOLUTIONS
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     RESOURCES
+========================================= -->
+
+<section id="resources">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+Resources & Insights
+</div>
+
+<h2>
+Knowledge, Education & Market Development
+</h2>
+
+<p>
+Explore selected product information, educational materials,
+company updates and medical technology resources.
+</p>
+
+</div>
+
+
+<div class="news-grid">
+
+
+<article class="news-card">
+
+<div class="news-category">
+TRAINING
+</div>
+
+<h3>
+Professional Education & Training
+</h3>
+
+<p>
+Updates on professional education, training and knowledge-sharing
+activities.
+</p>
+
+</article>
+
+
+<article class="news-card">
+
+<div class="news-category">
+TECHNOLOGY
+</div>
+
+<h3>
+Product & Technology Updates
+</h3>
+
+<p>
+Selected updates about medical technologies and developments
+from international partners.
+</p>
+
+</article>
+
+
+<article class="news-card">
+
+<div class="news-category">
+COMPANY NEWS
+</div>
+
+<h3>
+Stetig Company News
+</h3>
+
+<p>
+Updates about Stetig Limited and its regional activities.
+</p>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     CTA
+========================================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<div class="eyebrow">
+Let's Connect
+</div>
+
+<h2>
+Connecting Innovation, Healthcare and Better Mobility
+</h2>
+
+<p>
+Looking to develop your medical technology in Southeast Asia?
+Talk to the Stetig team.
+</p>
+
+<a href="#contact" class="btn">
+CONTACT STETIG →
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer id="contact">
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div>
+
+<div class="footer-logo">
+STETIG
+<small>LIMITED</small>
+</div>
+
+<p class="footer-description">
+Connecting global medical innovation with Southeast Asia.
+</p>
+
+</div>
+
+
+<div>
+
+<h4>COMPANY</h4>
+
+<ul>
+
+<li><a href="#about">About Us</a></li>
+<li><a href="#solutions">Our Approach</a></li>
+<li><a href="#partners">Partners</a></li>
+<li><a href="#resources">Resources</a></li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>PRODUCTS</h4>
+
+<ul>
+
+<li><a href="#products">Joint Replacement</a></li>
+<li><a href="#products">Spine Surgery</a></li>
+<li><a href="#products">Sports Medicine</a></li>
+<li><a href="#products">Regenerative Medicine</a></li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>CONTACT</h4>
+
+<div class="contact-info">
+
+<strong>Stetig Limited</strong>
+
+<br><br>
+
+Suite 1701-02, 17/F.,
+308 Central Des Voeux,
+308 Des Voeux Road Central,
+Hong Kong
+
+<br><br>
+
+<strong>Tel:</strong>
++852 9351 0184
+
+<br>
+
+<strong>Email:</strong>
+stetighk@gmail.com
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 Stetig Limited. All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+function toggleMenu() {
+
+    const nav = document.querySelector(".nav-links");
+
+    if (nav.style.display === "flex") {
+
+        nav.style.display = "";
+
+    } else {
+
+        nav.style.display = "flex";
+
+        nav.style.flexDirection = "column";
+
+        nav.style.position = "absolute";
+
+        nav.style.top = "72px";
+
+        nav.style.right = "5%";
+
+        nav.style.background = "#fff";
+
+        nav.style.padding = "25px";
+
+        nav.style.boxShadow = "0 15px 40px rgba(0,0,0,.12)";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
