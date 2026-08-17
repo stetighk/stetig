@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STETIG LIMITED | Wholesale & Trading of Medical Supplies</title>
+<meta name="description" content="Stetig Limited is a Hong Kong-based wholesale and trading company supplying selected medical devices and healthcare products, with a focus on orthopedic implants and regenerative and biomaterial products.">
+<style>
+:root{--navy:#082b55;--navy-dark:#051e3b;--blue:#0a5da8;--blue-light:#eaf4fb;--text:#17283d;--muted:#657487;--border:#dfe7ef;--white:#fff;--light:#f5f8fb}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,90%);margin:auto}
+.topbar{background:var(--navy);color:white;font-size:12px;padding:9px 0}.topbar-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}.topbar a:hover{text-decoration:underline}
+header{background:rgba(255,255,255,.97);border-bottom:1px solid #edf1f5;position:sticky;top:0;z-index:1000}
+.navbar{height:82px;display:flex;align-items:center;justify-content:space-between}
+.logo{color:var(--navy);font-weight:800;font-size:27px;letter-spacing:5px;line-height:1}.logo small{display:block;font-size:9px;letter-spacing:5px;text-align:center;margin-top:7px;font-weight:700}
+.nav-links{display:flex;align-items:center;gap:30px}.nav-links a{font-size:12px;font-weight:700;letter-spacing:.5px;color:#26384c;transition:.25s}.nav-links a:hover{color:var(--blue)}
+.menu-btn{display:none;border:none;background:none;font-size:27px;cursor:pointer;color:var(--navy)}
+.hero{min-height:650px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(242,248,252,.98) 0%,rgba(242,248,252,.92) 45%,rgba(242,248,252,.25) 100%),linear-gradient(120deg,#e9f2f8,#fff);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:650px;height:650px;border-radius:50%;right:-220px;top:-120px;background:radial-gradient(circle,rgba(10,93,168,.18),rgba(10,93,168,0))}
+.hero-content{max-width:760px;position:relative;z-index:2}.eyebrow{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:20px}
+.hero h1{font-size:clamp(42px,5vw,68px);line-height:1.03;color:var(--navy);font-weight:800;letter-spacing:-2px;margin-bottom:25px}.hero p{max-width:680px;color:#53667b;font-size:20px;line-height:1.7;margin-bottom:32px}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--navy);color:#fff;padding:15px 25px;font-size:12px;font-weight:800;letter-spacing:1px;transition:.25s}.btn:hover{background:var(--blue);transform:translateY(-2px)}
+section{padding:95px 0}.section-title{max-width:760px;margin-bottom:45px}.section-title h2{color:var(--navy);font-size:38px;line-height:1.15;margin-bottom:18px}.section-title p{color:var(--muted);font-size:16px}
+.expertise{background:#fff}.expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.expertise-card{border:1px solid var(--border);padding:35px 28px;background:#fff;transition:.3s}.expertise-card:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(8,43,85,.08)}
+.icon{width:50px;height:50px;display:flex;align-items:center;justify-content:center;background:var(--blue-light);color:var(--blue);font-weight:800;margin-bottom:25px}.expertise-card h3{color:var(--navy);font-size:19px;margin-bottom:12px}.expertise-card p{color:var(--muted);font-size:14px}
+.about{background:var(--light)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.about-image{min-height:500px;background:linear-gradient(135deg,rgba(8,43,85,.88),rgba(10,93,168,.45)),linear-gradient(120deg,#193e64,#9eb8ce);position:relative;overflow:hidden}.about-image:before{content:"";position:absolute;width:350px;height:350px;border:1px solid rgba(255,255,255,.25);border-radius:50%;top:70px;left:50%;transform:translateX(-50%)}.about-image:after{content:"STETIG";position:absolute;bottom:40px;left:40px;color:rgba(255,255,255,.85);font-size:50px;font-weight:800;letter-spacing:8px}
+.about-content h2{color:var(--navy);font-size:40px;line-height:1.15;margin-bottom:20px}.about-content p{color:var(--muted);margin-bottom:18px}
+.trade-note{margin:25px 0;padding:22px 25px;background:#fff;border-left:4px solid var(--blue);color:var(--muted);font-size:14px}.trade-note strong{color:var(--navy);font-size:17px}
+.products{background:#fff}.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.product-card{padding:28px;min-height:180px;border:1px solid var(--border);position:relative;transition:.3s}.product-card:hover{border-color:var(--blue);transform:translateY(-3px)}.product-number{color:var(--blue);font-size:11px;font-weight:800;letter-spacing:2px;margin-bottom:25px}.product-card h3{color:var(--navy);font-size:18px;margin-bottom:10px}.product-card p{color:var(--muted);font-size:13px}
+.market{background:var(--navy);color:#fff}.market-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.market .eyebrow{color:#65b8f3}.market h2{color:#fff;font-size:40px;line-height:1.15;margin-bottom:22px}.market p{color:#cbd9e8;font-size:16px}.approach{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.approach-item{border:1px solid rgba(255,255,255,.15);padding:22px}.approach-item strong{display:block;font-size:14px;margin-bottom:6px}.approach-item span{color:#aebfd1;font-size:12px}
+.cta{background:linear-gradient(120deg,#edf6fc,#f8fbfd);text-align:center}.cta h2{color:var(--navy);font-size:40px;margin-bottom:15px}.cta p{color:var(--muted);margin-bottom:25px}
+footer{background:var(--navy-dark);color:#fff;padding:70px 0 30px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.4fr;gap:50px}.footer-logo{color:#fff;font-weight:800;letter-spacing:5px;font-size:25px}.footer-logo small{display:block;font-size:8px;letter-spacing:5px;margin-top:6px}.footer-description{color:#aebfd1;font-size:13px;max-width:330px;margin-top:25px}footer h4{font-size:12px;letter-spacing:1.5px;margin-bottom:20px}footer ul{list-style:none}footer li{margin-bottom:10px}footer li a{color:#aebfd1;font-size:13px}footer li a:hover{color:#fff}.contact-info{color:#aebfd1;font-size:13px}.contact-info strong{color:#fff}.contact-info a:hover{color:#fff;text-decoration:underline}.footer-bottom{margin-top:60px;padding-top:25px;border-top:1px solid rgba(255,255,255,.12);color:#8195aa;font-size:11px}
+@media(max-width:950px){.nav-links{display:none}.menu-btn{display:block}.topbar-inner{justify-content:center}.topbar-right{display:none}.expertise-grid,.products-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.market-grid{grid-template-columns:1fr;gap:45px}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){section{padding:70px 0}.navbar{height:72px}.hero{min-height:580px}.hero h1{font-size:42px}.hero p{font-size:17px}.expertise-grid,.products-grid,.footer-grid{grid-template-columns:1fr}.about-image{min-height:330px}.about-content h2,.section-title h2,.market h2,.cta h2{font-size:31px}.approach{grid-template-columns:1fr}.topbar{display:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="container topbar-inner">
+<div>Suite 1701-02, 17/F., 308 Central Des Voeux, 308 Des Voeux Road Central, Hong Kong</div>
+<div class="topbar-right"><a href="tel:+85293510184">+852 9351 0184</a> &nbsp; | &nbsp; <a href="mailto:stetighk@gmail.com">stetighk@gmail.com</a></div>
+</div></div>
+
+<header><div class="container navbar">
+<a href="#home"><div class="logo">STETIG<small>LIMITED</small></div></a>
+<nav class="nav-links">
+<a href="#home">HOME</a><a href="#about">ABOUT US</a><a href="#products">PRODUCTS</a><a href="#trading">OUR ROLE</a><a href="#contact">CONTACT US</a>
+</nav>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+</div></header>
+
+<section class="hero" id="home"><div class="container"><div class="hero-content">
+<div class="eyebrow">WHOLESALE & TRADING · MEDICAL SUPPLIES</div>
+<h1>Wholesale & Trading of Medical Supplies</h1>
+<p>Stetig Limited is a Hong Kong-based wholesale and trading company supplying selected medical devices and healthcare products, with a particular focus on orthopedic implants and regenerative and biomaterial products.</p>
+<a href="#products" class="btn">VIEW PRODUCT CATEGORIES <span>→</span></a>
+</div></div></section>
+
+<section class="expertise"><div class="container">
+<div class="section-title"><div class="eyebrow">OUR EXPERTISE</div><h2>Focused on Medical Products That Support Mobility and Quality of Life</h2><p>Our experience is concentrated in selected medical devices and supplies, particularly orthopedic implants, regenerative and biomaterial products.</p></div>
+<div class="expertise-grid">
+<div class="expertise-card"><div class="icon">01</div><h3>Orthopedic Implants</h3><p>Selected implantable products for joint reconstruction, spine surgery, sports medicine and other orthopedic applications.</p></div>
+<div class="expertise-card"><div class="icon">02</div><h3>Regenerative & Biomaterial Products</h3><p>Selected regenerative, biomaterial and related products for orthopedic and healthcare applications.</p></div>
+<div class="expertise-card"><div class="icon">03</div><h3>Medical Supplies & Devices</h3><p>Selected medical supplies, devices and related products sourced from established manufacturers and suppliers.</p></div>
+</div></div></section>
+
+<section class="about" id="about"><div class="container about-grid">
+<div class="about-image"></div>
+<div class="about-content">
+<div class="eyebrow">WHO WE ARE</div>
+<h2>A Trading Company Focused on Medical Products</h2>
+<p>Stetig Limited is engaged in the wholesale and trading of medical supplies. We source and supply selected products from established manufacturers for customers and markets in Southeast Asia.</p>
+<p>Our experience is concentrated in medical devices, particularly orthopedic implants, as well as regenerative and biomaterial products. Our role is commercial: sourcing, trading and supplying products.</p>
+<div class="trade-note"><strong>A trade house, not a factory.</strong><br>Stetig selects and trades products from established manufacturers. We do not design or manufacture the medical devices we supply.</div>
+<a href="#trading" class="btn">HOW WE TRADE <span>→</span></a>
+</div></div></section>
+
+<section class="products" id="products"><div class="container">
+<div class="section-title"><div class="eyebrow">PRODUCT CATEGORIES</div><h2>Selected Medical Supplies & Devices</h2><p>Our product portfolio is focused on selected medical supplies and devices relevant to orthopedic and healthcare markets.</p></div>
+<div class="products-grid">
+<div class="product-card"><div class="product-number">01</div><h3>Joint Replacement</h3><p>Implant technologies supporting reconstruction of the hip, knee and other major joints.</p></div>
+<div class="product-card"><div class="product-number">02</div><h3>Spine Surgery</h3><p>Technologies and implant systems for spinal procedures and reconstruction.</p></div>
+<div class="product-card"><div class="product-number">03</div><h3>Sports Medicine & Arthroscopy</h3><p>Selected products for orthopedic and sports medicine procedures.</p></div>
+<div class="product-card"><div class="product-number">04</div><h3>Shoulder Solutions</h3><p>Selected implant and surgical products for shoulder reconstruction and related orthopedic applications.</p></div>
+<div class="product-card"><div class="product-number">05</div><h3>Regenerative & Biomaterial Products</h3><p>Selected biomaterial and regenerative products for orthopedic and healthcare applications.</p></div>
+<div class="product-card"><div class="product-number">06</div><h3>Joint Injection</h3><p>Selected injection products for joint care and orthopedic applications.</p></div>
+<div class="product-card"><div class="product-number">07</div><h3>Surgical Instruments</h3><p>Selected instruments and accessories supporting orthopedic surgical procedures.</p></div>
+</div></div></section>
+
+<section class="market" id="trading"><div class="container market-grid">
+<div><div class="eyebrow">OUR ROLE</div><h2>Wholesale & Trading — Simple and Clear</h2>
+<p>Stetig's business is straightforward: we identify suitable products, source them from manufacturers and suppliers, and trade and supply them to customers in our markets.</p><br>
+<p>We are a commercial trading company. We do not manufacture the products we supply, and we do not position ourselves as a clinical or medical service provider.</p></div>
+<div class="approach">
+<div class="approach-item"><strong>Source</strong><span>Identify and source selected products from established manufacturers and suppliers.</span></div>
+<div class="approach-item"><strong>Trade</strong><span>Conduct wholesale and commercial trading of selected medical supplies and devices.</span></div>
+<div class="approach-item"><strong>Supply</strong><span>Supply products to customers and market partners in relevant Southeast Asian markets.</span></div>
+<div class="approach-item"><strong>Focus</strong><span>Concentrate on selected orthopedic, regenerative and biomaterial product categories.</span></div>
+</div></div></section>
+
+<section class="cta" id="contact"><div class="container">
+<div class="eyebrow">CONTACT US</div><h2>Talk to Stetig</h2><p>For product enquiries, wholesale enquiries or general business enquiries, please contact us directly.</p>
+<div style="margin-top:28px;display:flex;justify-content:center;gap:38px;flex-wrap:wrap;font-size:17px">
+  <a href="mailto:stetighk@gmail.com?subject=Stetig%20Business%20Enquiry" style="color:var(--navy);font-weight:700">stetighk@gmail.com</a>
+  <a href="tel:+85293510184" style="color:var(--navy);font-weight:700">+852 9351 0184</a>
+</div>
+</div></section>
+
+<footer><div class="container"><div class="footer-grid">
+<div><div class="footer-logo">STETIG<small>LIMITED</small></div><p class="footer-description">Wholesale & trading of selected medical supplies and devices, with a focus on orthopedic implants and regenerative and biomaterial products.</p></div>
+<div><h4>COMPANY</h4><ul><li><a href="#about">About Us</a></li><li><a href="#trading">Our Role</a></li><li><a href="#contact">Contact Us</a></li></ul></div>
+<div><h4>PRODUCTS</h4><ul><li><a href="#products">Joint Replacement</a></li><li><a href="#products">Spine Surgery</a></li><li><a href="#products">Sports Medicine</a></li><li><a href="#products">Regenerative & Biomaterial</a></li></ul></div>
+<div><h4>CONTACT</h4><div class="contact-info"><strong>Stetig Limited</strong><br><br>Suite 1701-02, 17/F., 308 Central Des Voeux,<br>308 Des Voeux Road Central,<br>Hong Kong<br><br><strong>Tel:</strong> <a href="tel:+85293510184">+852 9351 0184</a><br><strong>Email:</strong> <a href="mailto:stetighk@gmail.com">stetighk@gmail.com</a></div></div>
+</div><div class="footer-bottom">© 2026 Stetig Limited. All Rights Reserved.</div></div></footer>
+
+<script>
+function toggleMenu(){
+ const nav=document.querySelector(".nav-links");
+ if(nav.style.display==="flex"){nav.style.display="";}
+ else{nav.style.display="flex";nav.style.flexDirection="column";nav.style.position="absolute";nav.style.top="72px";nav.style.right="5%";nav.style.background="#fff";nav.style.padding="25px";nav.style.boxShadow="0 15px 40px rgba(0,0,0,.12)";}
+}
+</script>
+</body>
+</html>
